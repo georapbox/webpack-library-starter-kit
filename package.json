@@ -12,12 +12,14 @@
     "test": "cross-env NODE_ENV=test mocha --require babel-core/register --colors ./test/*.spec.js",
     "coverage": "nyc --reporter=text --reporter=lcov npm test",
     "lint": "eslint src/**/*.js",
-    "build:umd:min": "webpack --mode=production --output-library-target=umd",
+    "build:umdmin": "webpack --mode=production --output-library-target=umd",
     "build:umd": "webpack --mode=development --output-library-target=umd",
     "build:commonjs": "webpack --mode=development --output-library-target=commonjs2",
-    "build": "npm run build:umd && npm run build:umd:min && npm run build:commonjs",
-    "watch": "webpack --progress --colors --watch --mode=development --output-library-target=umd",
-    "prepublishOnly": "npm test && npm run build"
+    "build": "npm-run-all build:*",
+    "dev:umd": "webpack --progress --colors --watch --mode=development --output-library-target=umd",
+    "dev:commonjs": "webpack --progress --colors --watch --mode=development --output-library-target=commonjs2",
+    "dev": "npm-run-all --parallel dev:*",
+    "prepublishOnly": "npm-run-all test build"
   },
   "repository": {
     "type": "git",
@@ -42,6 +44,7 @@
     "eslint": "~4.19.1",
     "eslint-loader": "~2.0.0",
     "mocha": "~5.1.1",
+    "npm-run-all": "~4.1.2",
     "nyc": "~11.7.1",
     "sinon": "~4.5.0",
     "sinon-chai": "~3.0.0",
