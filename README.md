@@ -6,7 +6,7 @@ Webpack starter kit for producing libraries (Input: ES6, Output: UMD, CommonJS)
 
 - Webpack 4 based
 - ES6 as a source
-- Exports in UMD and CommonJS formats
+- Exports in UMD and CommonJS
 - ES6 test setup with [Mocha](https://mochajs.org/) and [Chai](http://www.chaijs.com/)
 - Test coverage with [nyc command-line-client for Istanbul](https://github.com/istanbuljs/nyc)
 - Linting with [ESLint](https://eslint.org/)
