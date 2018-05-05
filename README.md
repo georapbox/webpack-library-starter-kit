@@ -56,7 +56,8 @@ Webpack starter kit for producing libraries (Input: ES6, Output: UMD, CommonJS)
 
 ## Misc
 
-- Be default `dist` and `lib` folders are excluded from source control but included for npm. You can change this behaviour by not excluding these folders inside the `.gitignore` file.
+- By default all source code is located under the `src` folder.
+- Be default `dist` and `lib` folders are excluded from source control but included for npm. You can change this behavior by not excluding these folders inside the `.gitignore` file.
 - The starter kit assumes that all tests are located under `test` folder with `.spec.js` extension.
 
 ## License
