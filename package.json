@@ -1,6 +1,6 @@
 {
   "name": "webpack-library-starter-kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Webpack starter kit for producing libraries (Input: ES6, Output: UMD, CommonJS)",
   "main": "dist/Library.js",
   "files": [
