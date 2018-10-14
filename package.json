@@ -9,7 +9,7 @@
     "lib/"
   ],
   "scripts": {
-    "test": "cross-env NODE_ENV=test mocha --require babel-core/register --colors ./test/*.spec.js",
+    "test": "cross-env NODE_ENV=test mocha --require @babel/register --colors ./test/*.spec.js",
     "coverage": "nyc --reporter=text --reporter=lcov npm test",
     "lint": "eslint src/**/*.js",
     "build:umdmin": "webpack --mode=production --output-library-target=umd",
@@ -36,6 +36,7 @@
     "@babel/core": "~7.1.2",
     "@babel/plugin-proposal-object-rest-spread": "~7.0.0",
     "@babel/preset-env": "~7.1.0",
+    "@babel/register": "~7.0.0",
     "babel-loader": "~8.0.4",
     "chai": "~4.2.0",
     "cross-env": "~5.2.0",
