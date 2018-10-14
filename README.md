@@ -4,7 +4,8 @@ Webpack starter kit for producing libraries (Input: ES6, Output: UMD, CommonJS)
 
 ## Features
 
-- Webpack 4 based
+- Webpack 4
+- Babel 7
 - ES6 as a source
 - Exports in UMD and CommonJS
 - ES6 test setup with [Mocha](https://mochajs.org/) and [Chai](http://www.chaijs.com/)
