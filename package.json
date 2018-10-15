@@ -1,6 +1,6 @@
 {
   "name": "webpack-library-starter-kit",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Webpack starter kit for producing libraries (Input: ES6, Output: UMD, CommonJS)",
   "main": "dist/Library.js",
   "files": [
@@ -9,7 +9,7 @@
     "lib/"
   ],
   "scripts": {
-    "test": "cross-env NODE_ENV=test mocha --require babel-core/register --colors ./test/*.spec.js",
+    "test": "cross-env NODE_ENV=test mocha --require @babel/register --colors ./test/*.spec.js",
     "coverage": "nyc --reporter=text --reporter=lcov npm test",
     "lint": "eslint src/**/*.js",
     "build:umdmin": "webpack --mode=production --output-library-target=umd",
@@ -33,23 +33,22 @@
   },
   "homepage": "https://github.com/georapbox/webpack-library-starter-kit#readme",
   "devDependencies": {
-    "babel-cli": "~6.26.0",
-    "babel-core": "~6.26.3",
-    "babel-loader": "~7.1.4",
-    "babel-plugin-add-module-exports": "~0.2.1",
-    "babel-plugin-transform-object-rest-spread": "~6.26.0",
-    "babel-preset-env": "~1.7.0",
-    "chai": "~4.1.2",
+    "@babel/core": "~7.1.2",
+    "@babel/plugin-proposal-object-rest-spread": "~7.0.0",
+    "@babel/preset-env": "~7.1.0",
+    "@babel/register": "~7.0.0",
+    "babel-loader": "~8.0.4",
+    "chai": "~4.2.0",
     "cross-env": "~5.2.0",
-    "eslint": "~5.1.0",
-    "eslint-loader": "~2.1.0",
+    "eslint": "~5.7.0",
+    "eslint-loader": "~2.1.1",
     "mocha": "~5.2.0",
-    "npm-run-all": "~4.1.2",
-    "nyc": "~12.0.2",
-    "sinon": "~6.1.3",
+    "npm-run-all": "~4.1.3",
+    "nyc": "~13.0.1",
+    "sinon": "~6.3.5",
     "sinon-chai": "~3.2.0",
-    "webpack": "~4.16.1",
-    "webpack-cli": "~3.1.0",
-    "yargs": "~12.0.1"
+    "webpack": "~4.20.2",
+    "webpack-cli": "~3.1.2",
+    "yargs": "~12.0.2"
   }
 }
