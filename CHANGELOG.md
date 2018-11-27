@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.1.2
+
+- Update `devDependencies`
+- Update `npm-run-all` to latest version to protect against `flatmap-stream` malicious dependency (https://github.com/mysticatea/npm-run-all/issues/153)
+
 ## v1.1.1
 
 - Update entry point in `package.json` to point to the CommonJS bundle instead of the UMD
