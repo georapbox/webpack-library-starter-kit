@@ -1,6 +1,6 @@
 # webpack-library-starter-kit
 
-Webpack starter kit for producing libraries (Input: ES6, Output: UMD, CommonJS)
+Webpack starter kit for creating libraries (Input: ES6, Output: UMD, CommonJS)
 
 ## Features
 

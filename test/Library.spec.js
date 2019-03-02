@@ -1,7 +1,7 @@
-import sinon from 'sinon';
-import sinonChai from 'sinon-chai';
-import chai from 'chai';
-import Library from '../src';
+const sinon = require('sinon');
+const sinonChai = require('sinon-chai');
+const chai = require('chai');
+const Library = require('../index');
 
 const { expect } = chai;
 
