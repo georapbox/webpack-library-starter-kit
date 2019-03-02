@@ -1,7 +1,7 @@
 {
   "name": "webpack-library-starter-kit",
-  "version": "1.1.2",
-  "description": "Webpack starter kit for producing libraries (Input: ES6, Output: UMD, CommonJS)",
+  "version": "1.0.0",
+  "description": "Webpack starter kit for creating libraries (Input: ES6, Output: UMD, CommonJS)",
   "main": "lib/Library.js",
   "files": [
     "src/",
@@ -33,22 +33,22 @@
   },
   "homepage": "https://github.com/georapbox/webpack-library-starter-kit#readme",
   "devDependencies": {
-    "@babel/core": "~7.1.2",
-    "@babel/plugin-proposal-object-rest-spread": "~7.0.0",
-    "@babel/preset-env": "~7.1.0",
+    "@babel/core": "~7.3.4",
+    "@babel/plugin-proposal-object-rest-spread": "~7.3.4",
+    "@babel/preset-env": "~7.3.4",
     "@babel/register": "~7.0.0",
-    "babel-loader": "~8.0.4",
+    "babel-loader": "~8.0.5",
     "chai": "~4.2.0",
     "cross-env": "~5.2.0",
-    "eslint": "~5.7.0",
-    "eslint-loader": "~2.1.1",
-    "mocha": "~5.2.0",
+    "eslint": "~5.15.0",
+    "eslint-loader": "~2.1.2",
+    "mocha": "~6.0.2",
     "npm-run-all": "~4.1.5",
-    "nyc": "~13.1.0",
-    "sinon": "~6.3.5",
-    "sinon-chai": "~3.2.0",
-    "webpack": "~4.26.1",
-    "webpack-cli": "~3.1.2",
-    "yargs": "~12.0.2"
+    "nyc": "~13.3.0",
+    "sinon": "~7.2.6",
+    "sinon-chai": "~3.3.0",
+    "webpack": "~4.29.6",
+    "webpack-cli": "~3.2.3",
+    "yargs": "~13.2.1"
   }
 }
