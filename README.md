@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/georapbox/webpack-library-starter-kit.svg?branch=master)](https://travis-ci.org/georapbox/webpack-library-starter-kit)
+
 # webpack-library-starter-kit
 
 Webpack starter kit for creating libraries (Input: ES6, Output: UMD, CommonJS)
@@ -53,7 +55,8 @@ Webpack starter kit for creating libraries (Input: ES6, Output: UMD, CommonJS)
 - `npm run test` - Runs the tests.
 - `npm run coverage` - Runs the tests and provides with test coverage information.
 - `npm run lint` - Lints the source code with ESlint.
-- `npm run prepublishOnly` - Runs before publishing the library to npm. Runs the tests and builds the library for production.
+- `npm run clean` - Deletes `dist`, `lib` and `coverage` folders.
+- `npm run prepare` - Run both BEFORE the package is packed and published, on local npm install without any arguments, and when installing git dependencies.
 
 ## Misc
 
