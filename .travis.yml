@@ -11,5 +11,5 @@ before_install:
 install:
   - npm install
 script:
-  - npm run coverage
+  - npm-run-all clean lint test build
   - codecov
