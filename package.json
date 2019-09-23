@@ -52,5 +52,6 @@
     "webpack": "~4.40.2",
     "webpack-cli": "~3.3.9",
     "yargs": "~14.1.0"
-  }
+  },
+  "browserslist": "> 0.5%, last 2 versions, Firefox ESR, not dead"
 }
