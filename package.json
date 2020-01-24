@@ -20,7 +20,7 @@
     "dev:commonjs": "webpack --progress --colors --watch --mode=development --output-library-target=commonjs2",
     "dev": "npm-run-all --parallel dev:*",
     "clean": "rimraf dist lib coverage",
-    "prepare": "npm-run-all clean lint test build"
+    "prepare": "npm-run-all clean build"
   },
   "repository": {
     "type": "git",
