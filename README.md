@@ -2,9 +2,11 @@
 [![Dependencies](https://david-dm.org/georapbox/webpack-library-starter-kit.svg?theme=shields.io)](https://david-dm.org/georapbox/webpack-library-starter-kit)
 [![devDependency Status](https://david-dm.org/georapbox/webpack-library-starter-kit/dev-status.svg)](https://david-dm.org/georapbox/webpack-library-starter-kit?type=dev)
 
-# webpack-library-starter-kit
+# claimback-library-starter-kit
 
 Webpack starter kit for creating libraries (Input: ES6, Output: UMD, CommonJS)
+
+Forked for claimback from [webpack-library-starter-kit](https://github.com/georapbox/webpack-library-starter-kit)
 
 ## Features
 
@@ -14,8 +16,8 @@ Webpack starter kit for creating libraries (Input: ES6, Output: UMD, CommonJS)
 - Exports in UMD and CommonJS
 - ES6 test setup with [Mocha](https://mochajs.org/) and [Chai](http://www.chaijs.com/)
 - Test coverage with [nyc command-line-client for Istanbul](https://github.com/istanbuljs/nyc)
-- Linting with [ESLint](https://eslint.org/)
-- Basic [Travis](https://travis-ci.org/) configuration
+- Linting with [Standard](https://standardjs.com/)
+- Basic [Circle Ci](https://circleci.com/) configuration // TODO: add this
 
 ## Getting started
 
@@ -23,7 +25,7 @@ Webpack starter kit for creating libraries (Input: ES6, Output: UMD, CommonJS)
 
 - Open `webpack.config.js` and change the value of `libraryName` variable with your library's name.
 - Open `package.json` and change the following properties with your library's equivalent
-  - `name`
+  - `name` (keep the @claimback scope to privatise this repo)
   - `version`
   - `description`
   - `main`
@@ -65,6 +67,29 @@ Webpack starter kit for creating libraries (Input: ES6, Output: UMD, CommonJS)
 - By default all source code is located under the `src` folder.
 - Be default `dist` and `lib` folders are excluded from source control but included for npm. You can change this behavior by not excluding these folders inside the `.gitignore` file.
 - The starter kit assumes that all tests are located under `test` folder with `.spec.js` extension.
+
+
+## Futher steps
+
+### Add React
+
+`npm i --save-dev react react-dom @babel/preset-react`
+
+To install React and the babel transformers
+
+Add `react` and `react-dom` to the projects peer dependencies
+
+add `@babel/preset-react` to the presets in .babelrc
+
+
+### Add storyook
+
+First install react above and then run
+
+`npx -p @storybook/cli sb init` 
+
+To install storybook and its dependencies.
+Configure the storybook config
 
 ## License
 

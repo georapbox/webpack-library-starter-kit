@@ -1,23 +1,26 @@
-const sinon = require('sinon');
-const sinonChai = require('sinon-chai');
-const chai = require('chai');
-const Library = require('../index');
+/* eslint-env mocha */
+const sinon = require('sinon')
+const sinonChai = require('sinon-chai')
+const chai = require('chai')
+const dirtyChai = require('dirty-chai')
+const Library = require('../index')
 
-const { expect } = chai;
+const { expect } = chai
 
-chai.use(sinonChai);
+chai.use(dirtyChai)
+chai.use(sinonChai)
 
-let library;
+let library
 
 // Replace with actual tests
 describe('Library', () => {
-  beforeEach(() => library = new Library());
+  beforeEach(() => { library = new Library() })
 
   it('should get the library\'s name', () => {
-    const spy = sinon.spy(library, 'name');
-    const name = library.name();
-    expect(name).to.eql('Library');
-    spy.restore();
-    expect(spy).to.have.been.called;
-  });
-});
+    const spy = sinon.spy(library, 'name')
+    const name = library.name()
+    expect(name).to.eql('Library')
+    spy.restore()
+    expect(spy).to.have.been.called()
+  })
+})

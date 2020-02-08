@@ -1,20 +1,20 @@
-const webpack = require('webpack');
-const mode = require('yargs').argv.mode;
-const libraryTarget = require('yargs').argv['output-library-target'];
-const pkg = require('./package.json');
+const webpack = require('webpack')
+const mode = require('yargs').argv.mode
+const libraryTarget = require('yargs').argv['output-library-target']
+const pkg = require('./package.json')
 
-const libraryName = 'Library';
+const libraryName = 'lib'
 
 const banner = `${pkg.name}
 ${pkg.description}\n
 @version v${pkg.version}
 @author ${pkg.author}
 @homepage ${pkg.homepage}
-@repository ${pkg.repository.url}`;
+@repository ${pkg.repository.url}`
 
 const plugins = [
   new webpack.BannerPlugin(banner)
-];
+]
 
 module.exports = {
   entry: `${__dirname}/index.js`,
@@ -33,13 +33,8 @@ module.exports = {
         test: /(\.jsx|\.js)$/,
         loader: 'babel-loader',
         exclude: /(node_modules|bower_components)/
-      },
-      {
-        test: /(\.jsx|\.js)$/,
-        loader: 'eslint-loader',
-        exclude: /(node_modules|bower_components)/
       }
     ]
   },
   plugins: plugins
-};
+}
