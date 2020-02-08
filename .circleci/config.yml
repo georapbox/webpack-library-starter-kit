@@ -18,29 +18,27 @@ defaults: &defaults
 version: 2
 jobs:
   test:
-    <<: *defaults
+    <<: *defaults  
     steps:
       - checkout
-      # Download and cache dependencies
+
       - restore_cache:
           keys:
-            - v1-dependencies-{{ checksum "package-lock.json" }}
+          - v1-dependencies-{{ checksum "package-lock.json" }}
 
       - run: npm install
-      # run tests!
-      - run: npm run lint
-      - run: npm test
-
+      - run:
+          name: Run tests
+          command: npm test
 
       - save_cache:
-        paths:
-          - node_modules
-        key: v1-dependencies-{{ checksum "package-lock.json" }}
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package-lock.json" }}
 
-    - persist_to_workspace:
-        root: ~/repo
-        paths: .
-
+      - persist_to_workspace:
+          root: ~/repo
+          paths: .
   deploy:
     <<: *defaults
     steps:
@@ -52,7 +50,7 @@ jobs:
       - run:
           name: Publish package
           command: npm publish
-
+            
 workflows:
   version: 2
   test-deploy:
