@@ -1,6 +1,6 @@
 class Library {
   constructor () {
-    this._name = 'Library'
+    this._name = 'Claimback Lib'
   }
 
   name () {
