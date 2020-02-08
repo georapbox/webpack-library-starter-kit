@@ -27,17 +27,17 @@ jobs:
             - v1-dependencies-{{ checksum "package-lock.json" }}
 
       - run: npm install
-
-      - save_cache:
-          paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package-lock.json" }}
-
       # run tests!
       - run: npm run lint
       - run: npm test
 
-      - persist_to_workspace:
+
+      - save_cache:
+        paths:
+          - node_modules
+        key: v1-dependencies-{{ checksum "package-lock.json" }}
+
+    - persist_to_workspace:
         root: ~/repo
         paths: .
   deploy:
