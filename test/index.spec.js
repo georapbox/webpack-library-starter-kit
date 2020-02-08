@@ -19,7 +19,7 @@ describe('Library', () => {
   it('should get the library\'s name', () => {
     const spy = sinon.spy(library, 'name')
     const name = library.name()
-    expect(name).to.eql('Library')
+    expect(name).to.eql('Claimback Lib')
     spy.restore()
     expect(spy).to.have.been.called()
   })
