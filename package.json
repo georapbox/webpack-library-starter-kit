@@ -1,6 +1,6 @@
 {
   "name": "@claimback/library-starter-kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Webpack starter kit for creating libraries (Input: ES6, Output: UMD, CommonJS)",
   "main": "lib/lib.js",
   "files": [
