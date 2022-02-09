@@ -1,6 +1,4 @@
 [![Build Status](https://travis-ci.com/georapbox/webpack-library-starter-kit.svg?branch=master)](https://travis-ci.com/georapbox/webpack-library-starter-kit)
-[![Dependencies](https://david-dm.org/georapbox/webpack-library-starter-kit.svg?theme=shields.io)](https://david-dm.org/georapbox/webpack-library-starter-kit)
-[![devDependency Status](https://david-dm.org/georapbox/webpack-library-starter-kit/dev-status.svg)](https://david-dm.org/georapbox/webpack-library-starter-kit?type=dev)
 
 # webpack-library-starter-kit
 
